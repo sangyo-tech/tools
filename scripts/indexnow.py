@@ -9,6 +9,8 @@ ENDPOINT = "https://api.indexnow.org/indexnow"
 URLS = [
     "https://tools.sangyo-tech.jp/",
     "https://tools.sangyo-tech.jp/cpk/",
+    "https://tools.sangyo-tech.jp/llms/",
+    "https://tools.sangyo-tech.jp/llms.txt",
     "https://tools.sangyo-tech.jp/sitemap.xml",
 ]
 

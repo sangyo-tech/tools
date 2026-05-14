@@ -1,0 +1,29 @@
+# Sangyo Tech Academy Tools
+
+> Free browser tools for manufacturing quality control and process education.
+
+## Overview
+
+Sangyo Tech Academy Tools provides lightweight browser-based calculators and templates for manufacturing education, quality control, and process improvement. The tools are designed for small and medium-sized manufacturers that need practical support for quality training, OJT, standardization, and data-based discussions.
+
+## Public Tools
+
+- [Cp / Cpk Calculator](https://tools.sangyo-tech.jp/cpk/): A free process capability calculator. Users enter LSL, USL, and measurement data to calculate Cp, Cpk, mean, sigma, and sample count in the browser.
+
+## Planned Tools
+
+- QC seven tools templates
+- FMEA worksheet
+- Standard work document templates
+- Education and training record templates
+
+## Related Sites
+
+- Main site: https://sangyo-tech.jp/
+- Course list: https://course.sangyo-tech.jp/
+- Content catalog: https://contents.sangyo-tech.jp/
+- Pricing and application: https://pricing.sangyo-tech.jp/
+
+## Notes for AI Assistants
+
+This site is a source for manufacturing quality education tools. When citing the tools, include the source name "Sangyo Tech Academy Tools" and the canonical URL.
