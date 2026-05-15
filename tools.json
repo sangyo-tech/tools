@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "",
+    "url": "https://tools.sangyo-tech.jp/",
+    "lastmod": "2026-05-15",
+    "changefreq": "weekly",
+    "priority": "1.0",
+    "status": "published"
+  },
+  {
+    "slug": "cpk",
+    "url": "https://tools.sangyo-tech.jp/cpk/",
+    "lastmod": "2026-05-14",
+    "changefreq": "monthly",
+    "priority": "0.9",
+    "status": "published"
+  },
+  {
+    "slug": "llms",
+    "url": "https://tools.sangyo-tech.jp/llms/",
+    "lastmod": "2026-05-15",
+    "changefreq": "monthly",
+    "priority": "0.8",
+    "status": "published"
+  },
+  {
+    "slug": "qc-seven-tools",
+    "url": "https://tools.sangyo-tech.jp/qc-seven-tools/",
+    "lastmod": "2026-05-15",
+    "changefreq": "monthly",
+    "priority": "0.7",
+    "status": "planned"
+  },
+  {
+    "slug": "fmea",
+    "url": "https://tools.sangyo-tech.jp/fmea/",
+    "lastmod": "2026-05-15",
+    "changefreq": "monthly",
+    "priority": "0.7",
+    "status": "planned"
+  },
+  {
+    "slug": "standard-work",
+    "url": "https://tools.sangyo-tech.jp/standard-work/",
+    "lastmod": "2026-05-15",
+    "changefreq": "monthly",
+    "priority": "0.7",
+    "status": "planned"
+  }
+]

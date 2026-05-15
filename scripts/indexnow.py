@@ -2,23 +2,27 @@
 import json
 import urllib.request
 import urllib.error
+from pathlib import Path
+from xml.etree import ElementTree as ET
 
 API_KEY = "d00ed3ee747299f665b04f29cd0fab9c"
 HOST = "tools.sangyo-tech.jp"
 ENDPOINT = "https://api.indexnow.org/indexnow"
-URLS = [
-    "https://tools.sangyo-tech.jp/",
-    "https://tools.sangyo-tech.jp/cpk/",
-    "https://tools.sangyo-tech.jp/llms/",
-    "https://tools.sangyo-tech.jp/llms.txt",
-    "https://tools.sangyo-tech.jp/sitemap.xml",
-]
+
+
+def urls_from_sitemap() -> list[str]:
+    sitemap = Path(__file__).resolve().parent.parent / "sitemap.xml"
+    root = ET.fromstring(sitemap.read_text(encoding="utf-8"))
+    ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+    urls = [el.text for el in root.findall(".//sm:loc", ns) if el.text]
+    urls.extend([f"https://{HOST}/llms.txt", f"https://{HOST}/sitemap.xml"])
+    return sorted(set(urls))
 
 payload = {
     "host": HOST,
     "key": API_KEY,
     "keyLocation": f"https://{HOST}/{API_KEY}.txt",
-    "urlList": URLS,
+    "urlList": urls_from_sitemap(),
 }
 req = urllib.request.Request(
     ENDPOINT,
